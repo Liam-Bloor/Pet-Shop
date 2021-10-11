@@ -3,10 +3,76 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>webpack starterkit</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-  <h1>webpack starter</h1>
-  <p>✨ A lightweight foundation for your next webpack based frontend project.</p>
+  <div class="dimmer"></div>
+
+  <header class="header-container">
+    <img class="header-image" src="images/svg/logo.svg" alt="Logo">
+    <img id="basket-button" class="header-image" src="images/svg/bag.svg" alt="Basket">
+  </header>
+
+  <section class="summary-container">
+    <h1 class="summary-heading">Lorem ipsum dolor sit amet</h1>
+    <div class="summary-text-box">
+      <p1 class="summary">
+        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+      </p1>
+    </div>
+  </section>
+
+  <section class="product-container">
+    <div class="product-card">
+      <img class="product-image" src="chicken.png" alt="Chicken">
+      <p>Natures Menu Dog Food Can Chicken</p>
+      <p class="common-price">£22.81</p>
+      <button class="common-orange-button">ADD TO BAG</button>
+    </div>
+  </section>
+
+  <section id="basket" class="basket-container">
+    <header class="header-container basket-header-container">
+      <p class="basket-title">Your Bag</p>
+      <img id="close" class="header-image basket-close" src="images/svg/close.svg" alt="Close">
+    </header>
+    <div class="basket-item-container">
+      <div class="basket-item">
+        <img class="basket-item-image" src="images/chicken@2x.png" alt="Chicken">
+        <p>Natures Menu Dog Food Can Chicken</p>
+        <p class="basket-price">£22.81</p>
+        <button class="basket-remove-button">REMOVE</button>
+      </div>
+      <div class="basket-item">
+        <img class="basket-item-image" src="images/chicken@2x.png" alt="Chicken">
+        <p>Natures Menu Dog Food Can Chicken</p>
+        <p class="basket-price">£22.81</p>
+        <button class="basket-remove-button">REMOVE</button>
+      </div>
+      <div class="basket-item">
+        <img class="basket-item-image" src="images/chicken@2x.png" alt="Chicken">
+        <p>Natures Menu Dog Food Can Chicken</p>
+        <p class="basket-price">£22.81</p>
+        <button class="basket-remove-button">REMOVE</button>
+      </div>
+      <div class="basket-item">
+        <img class="basket-item-image" src="images/chicken@2x.png" alt="Chicken">
+        <p>Natures Menu Dog Food Can Chicken</p>
+        <p class="basket-price">£22.81</p>
+        <button class="basket-remove-button">REMOVE</button>
+      </div>
+    </div>
+
+    <footer class="basket-footer">
+      <p class="basket-footer-price">Subtotal: £91.24</p>
+      <button class="common-orange-button basket-wide-button">PROCEED TO CHECKOUT</button>
+      <button id="continue-shopping" class="basket-continue-shopping-button">CONTINUE SHOPPING</button>
+    </footer>
+  </section>
 </body>
 </html>

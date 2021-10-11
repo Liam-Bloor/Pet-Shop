@@ -5,6 +5,7 @@ const ESLintPlugin = require('eslint-webpack-plugin');
 const StylelintPlugin = require('stylelint-webpack-plugin');
 
 const common = require('./webpack.common.js');
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = merge(common, {
   target: 'web',
@@ -35,10 +36,7 @@ module.exports = merge(common, {
   ],
   module: {
     rules: [
-      {
-        test: /\.html$/i,
-        loader: 'html-loader',
-      },
+
       {
         test: /\.js$/,
         include: Path.resolve(__dirname, '../src'),
